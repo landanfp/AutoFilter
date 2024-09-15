@@ -944,7 +944,7 @@ async def settings(client, message):
             )
 
 
-
+"""
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
     sts = await message.reply("ᴄʜᴇᴄᴋɪɴɢ ᴛᴇᴍᴘʟᴀᴛᴇ...")
@@ -1280,7 +1280,8 @@ async def ginfo(bot, message):
             return await message.reply_text(f"<b>ᴛᴜᴛᴏʀɪᴀʟ : <code>{st}</code>\n\nᴜꜱᴇ  /shortlink  ᴄᴏᴍᴍᴀɴᴅ  ᴛᴏ  ᴄᴏɴɴᴇᴄᴛ  ʏᴏᴜʀ  ꜱʜᴏʀᴛɴᴇʀ</b>")
         else:
             return await message.reply_text("ꜱʜᴏʀᴛɴᴇʀ ᴀɴᴅ ᴛᴜᴛᴏʀɪᴀʟ ᴀʀᴇ ɴᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ.\n\nᴄʜᴇᴄᴋ /set_tutorial  ᴀɴᴅ  /set_shortlink  ᴄᴏᴍᴍᴀɴᴅ.")
-
+"""
+#-------------------------------------------------------------------------------    
 @Client.on_message(filters.command("donate"))
 async def donate_command(client, message):
     buttons = [
@@ -1312,7 +1313,8 @@ async def support_command(client, message):
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(text=script.SUPPORT_TXT, reply_markup=reply_markup)
-
+#------------------------------------------------------------------------------- 
+"""
 @Client.on_message(filters.command("set_tutorial"))
 async def settutorial(bot, message):
     userid = message.from_user.id if message.from_user else None
@@ -1364,8 +1366,8 @@ async def removetutorial(bot, message):
         pass
     reply = await message.reply_text("<b>ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...</b>")
     await save_group_settings(grpid, 'is_tutorial', False)
-    await reply.edit_text(f"<b>ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ✅</b>")
-
+    await reply.edit_text(f"<b>ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ✅</b>") """
+#-------------------------------------------------------------------------------
 @Client.on_message(filters.command("refer"))
 async def refer(bot, message):
     btn = [[
