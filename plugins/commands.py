@@ -171,7 +171,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-
+"""
     if message.command[1].startswith("reff_"):
         try:
             user_id = int(message.command[1].split("_")[1])
@@ -392,7 +392,8 @@ async def start(client, message):
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
         
-    """
+        #####_______________________###
+    
     elif data.startswith("short"):
         protect_content=True
         current_time = datetime.now(pytz.timezone(TIMEZONE))
