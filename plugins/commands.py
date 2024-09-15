@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
-
+"""
 @Client.on_message(filters.command("gsend") & filters.user(ADMINS))
 async def send_chatmsg(bot, message):
     if message.reply_to_message:
@@ -46,7 +46,7 @@ async def send_chatmsg(bot, message):
             await message.reply_text("<b>Aɴ Eʀʀᴏʀ Oᴄᴄᴜʀʀᴇᴅ !</b>")
     else:
         await message.reply_text("<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ...</b>")
-
+"""
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -392,7 +392,7 @@ async def start(client, message):
         await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
         
-    
+    """
     elif data.startswith("short"):
         protect_content=True
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -620,7 +620,7 @@ async def start(client, message):
     await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return  
 
-    
+    """
 #-------------------------------------------------------------------------------
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
