@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """<b>👋 سلام {} |🥰😉\n\n<u>test</u>\n\n----\n------\n\n🖍️ سازنده ربات : <a href='t.me/Farshidband'>FﾑRSみɨの-BﾑŊの</a> """
+    START_TXT = """<b>👋 سلام {} |🥰😉\n\n<u>• به ربات ریلز دانلودر خوش آمدید ❤️</u>\n\n• لینک اینستاگرامی موردنظرتان را ارسال کنید.\nتا فایلشو براتون بفرستم. 😊\n\n🖍️ سازنده ربات : <a href='t.me/Farshidband'>FﾑRSみɨの-BﾑŊの</a></b> """
 
     GSTART_TXT = """<b>ʜᴇʏ {},\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/cryxelys">ᴍɪᴋᴇʏ</a></b>"""
     
@@ -667,7 +667,7 @@ IMDb Data:
 ‣ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}</b>"""
     
     RESTART_TXT = """
-<b>ربات با موفقیت ران شد. 😍
+<b>✅ ربات با موفقیت ران شد. 😍
 📅 تاریخ : <code>{}</code>
 ⏰ زمان : <code>{}</code>
 🌐 منطقه زمانی : <code>Asia/Kolkata</code>
