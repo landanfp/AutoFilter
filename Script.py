@@ -1,10 +1,6 @@
 class script(object):
-    START_TXT = """<b>ʜᴇʏ {},
+    START_TXT = """<b>👋 سلام {} |🥰😉\n\n<u>test</u>\n\n----\n------\n\n🖍️ سازنده ربات : <a href='t.me/Farshidband'>FﾑRSみɨの-BﾑŊの</a> """
 
-ɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ
-
-‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/codeflix_bots'>sᴜʙᴀʀᴜ</a></b>
-"""
     GSTART_TXT = """<b>ʜᴇʏ {},\n\nɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\nᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/cryxelys">ᴍɪᴋᴇʏ</a></b>"""
     
     HELP_TXT = """<b>ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ!</b>"""
@@ -550,10 +546,10 @@ Our background remover tool is a powerful and easy-to-use solution for removing 
 ◉ ᴍᴇᴍʙᴇʀꜱ: {}
 ◉ ᴀᴅᴅᴇᴅ ʙʏ: {}"""
 
-    LOG_TEXT_P = """#ɴᴇᴡ_ᴜꜱᴇʀ
-    
-◉ ᴜꜱᴇʀ-ɪᴅ: <code>{}</code>
-◉ ᴀᴄᴄ-ɴᴀᴍᴇ: {}"""
+    LOG_TEXT_P = """<b><u>✅ کاربر جدیدی به ربات پیوست 😍 </u>
+🔺 نام کاربر  : <code>{}</code>
+🔺 آیدی عددی کاربر : {}
+🤖 ربات : @IR_InstagramdlBot</b>"""
 
     ALRT_TXT = """{},
 ᴄʜᴇᴄᴋ  ʏᴏᴜʀ  ᴏᴡɴ  ʀᴇǫᴜᴇ𝗌ᴛ   😤
@@ -671,12 +667,12 @@ IMDb Data:
 ‣ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}</b>"""
     
     RESTART_TXT = """
-<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
-
-📅 Dᴀᴛᴇ : <code>{}</code>
-⏰ Tɪᴍᴇ : <code>{}</code>
-🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
-🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>ᴠ4.4 [ Sᴛᴀʙʟᴇ ]</code></b>"""
+<b>ربات با موفقیت ران شد. 😍
+📅 تاریخ : <code>{}</code>
+⏰ زمان : <code>{}</code>
+🌐 منطقه زمانی : <code>Asia/Kolkata</code>
+🛠️ ورژن کد : <code>v4.4 [ Sᴛᴀʙʟᴇ ]</code></b>
+🤖 ربات : @IR_InstagramdlBot</b>"""
 
     LOGO = """
                 _       __ _ _        _           _       
