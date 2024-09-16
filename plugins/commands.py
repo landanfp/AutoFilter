@@ -718,3 +718,16 @@ async def stop_button(bot, message):
     await msg.edit("**✅️ ربات با موفقیت ریست شد. 😊**")
     os.execl(sys.executable, sys.executable, *sys.argv)
 
+
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["users"]))
+async def users(client,message):
+	botdata(int(botid))
+	data = find_one(int(botid))
+#	total_rename = data["total_rename"]
+#	total_size = data["total_size"]
+#	id = str(getid())
+#	ids = id.split(',')
+
+	await message.reply_text(f"**👥 تعداد کاربران ربات :- {total_user()} کاربر **",quote=True,
+                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("بستن", callback_data="cancel")]]) 
+                                )
