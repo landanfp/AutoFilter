@@ -12,7 +12,7 @@ async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages...'
+        text='**•پخش ارسال این پیام به کاربران شروع شد.**'
     )
     start_time = time.time()
     total_users = await db.total_users_count()
@@ -38,14 +38,14 @@ async def verupikkals(bot, message):
         if not done % 20:
             await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    await sts.edit(f"**♻️پیام همگانی باموفقیت ارسال شد\n\n📲 ارسال پیام در تایم {time_taken}پایان یافت.\n\n👥 تعداد کاربران : {total_users}\n✉️ مجموع انجام شده پیام : {done} / {total_users}\n✅ تعداد ارسال موفق : {success}\n❌ تعداد ارسال ناموفق : {blocked} **")
 
 @Client.on_message(filters.command("grp_broadcast") & filters.user(ADMINS) & filters.reply)
 async def broadcast_group(bot, message):
     groups = await db.get_all_chats()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages To Groups...'
+        text='**•پخش ارسال این پیام به کاربران شروع شد.**'
     )
     start_time = time.time()
     total_groups = await db.total_chat_count()
@@ -63,5 +63,5 @@ async def broadcast_group(bot, message):
         if not done % 20:
             await sts.edit(f"Broadcast in progress:\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")
+    await sts.edit(f"**♻️پیام همگانی باموفقیت ارسال شد\n\n📲 ارسال پیام در تایم{time_taken}پایان یافت.\n\n👥 تعداد گروه ها : {total_groups}\n✉️ مجموع انجام شده پیام : {done} / {total_groups}\n✅ تعداد ارسال موفق : {success} **")
         
