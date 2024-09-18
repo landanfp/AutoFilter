@@ -51,7 +51,7 @@ async def link_handler(Mbot, message):
                      meta=re.findall(r'href="(https?://[^"]+)"', res['data']) 
                      content_value = meta[0]
                   else:
-                      return await message.reply("oops something went wrong")
+                      return await message.reply("**× مشکلی پیش آمد. 😢**")
                try:
                    if ddinsta:
                       dump_file=await message.reply_video(content_value,caption="**✅ @IR_InstagramDLBot**")
@@ -69,7 +69,7 @@ async def link_handler(Mbot, message):
                      res=meta_tag.json()
                      meta=re.findall(r'href="(https?://[^"]+)"', res['data']) 
                   else:
-                      return await message.reply("oops something went wrong")
+                      return await message.reply("× مشکلی پیش آمد. 😢")
               #    await message.reply(meta)
                   for i in range(len(meta) - 1):
                      com=await message.reply_text(meta[i])
@@ -85,7 +85,7 @@ async def link_handler(Mbot, message):
                      res=meta_tag.json()
                      meta=re.findall(r'href="(https?://[^"]+)"', res['data']) 
                   else:
-                      return await message.reply("Oops something went wrong")
+                      return await message.reply("× مشکلی پیش آمد. 😢")
                   try:
                      dump_file=await message.reply_video(meta[0], caption="✅ @IR_InstagramDLBot")
                   except:
@@ -106,7 +106,7 @@ async def link_handler(Mbot, message):
                await Mbot.send_message(LOG_GROUP, traceback.format_exc())
           #     await message.reply(tracemsg)
             ##optinal 
-            await message.reply(f"400: Sorry, Unable To Find It  try another or report it  to @VeldXd or support chat https://t.me/+DnmZbLjS0iw0YWI1")
+            await message.reply(f"400: Sorry, Unable To Find It  try another or report it  to")
 
         finally:
             if 'dump_file' in locals():
